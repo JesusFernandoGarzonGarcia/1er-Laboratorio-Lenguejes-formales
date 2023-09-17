@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Gramaticas de muchos tipos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fernando Garzon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<meta name="description" content="Sedentarismo" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Proyecto Lenguajes Formales</div></header>
+<nav id="siteNav">
+   <ul>
+      <li id="active"><a href="Fundamentos.html" class=" daddy ">Fundamentos en lenguajes formales y ejercicios de aplicacion con transiciones vacias</a>
+         <ul class="other-section">
+            <li><a href="English.html" class="no-ch">I am Reading in English... </a></li>
+            <li><a href="IndagandoElAutomataVacio.html" class="no-ch">Indagando el autómata vacío </a></li>
+         </ul>  
+      </li>
+      <li><a href="deLasGramaticas.html" class="daddy">De las Gramáticas y los autómatas</a>
+         <ul >  
+         <li class="active"><a href="MuchosTipos.html" class="active daddy">Gramáticas de muchos tipos</a></li>
+            <li><a href="IndagandoLosAutomatas.html" class="no-ch">Indagando los automatas</a>
+               <ul class="other-section">
+                  <li><a href="A1.html" class="no-ch">A1</a></li>
+                  <li><a href="A2.html" class="no-ch">A2</a></li>
+               </ul>
+            </li>
+            <li><a href="FuncionesDeSalida.html" class="no-ch">Funciones de salida</a>
+               <ul class="other-section">
+                  <li><a href="A3.html" class="no-ch">A3</a></li>
+                  <li><a href="A4.html" class="no-ch">A4</a></li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+      <li><a href="bibliografas.html" class="no-ch">Bibliografías.</a></li>
+   </ul>
+   </nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="la_educacin_fsica_y_su_importancia_contra_el_sedentarismo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Gramaticas de muchos tipos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">G1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_123_2" class="block iDevice_content">
+   <div class="exe-text"><div style="width: 100%;">
+      <h2>G1 = {V, Σ, P, S}
+         <br> Donde:
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; V = {S, A, T} 
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; Σ = {x, y} 
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; P = {	S → A,
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; A → xA | xT,
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; T → y | A } 
+         <br>&nbsp;&nbsp;&nbsp;&nbsp; S = {S}
+         <br>Figura de arbol 1
+         <br>
+         <br>Por ende, el lenguaje de la gramática 1 es:
+         <br>L1= {xy, xxy, xxxy, xxxxy, xxxxxy, …}
+         <br>
+         <br>Por comprensión
+         <br>L1 = {X^n y |n >0}
+         <br>
+         <br>Analizaremos las siguientes palabras
+         <br>W1 = xy
+         <br>W2= xxxy
+         <br>W3= xxxxxy
+         <br>
+         <br>por medio de sus árboles de derivación particular, Las cuales deberían pertenecer al lenguaje 1
+         <br>
+         <br>palabra 1 
+         <br>Palabra 2
+         <br>Palabra 3
+         <br>
+         <br>Gracias a los árboles de derivación anteriores podemos determinar que: {𝑊1, 𝑊2, 𝑊3} ϵ ⊥(𝐺1)
+         </h2>
+   </div></div>
+   </div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id3">
+   <div class="iDevice emphasis1" >
+   <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">G2</h1></header>
+   <div class="iDevice_inner">
+   <div class="iDevice_content_wrapper">
+   <div id="ta2_123_2" class="block iDevice_content">
+      <div class="exe-text"><div style="width: 100%;">
+         <h2>
+      <br>   𝐺2 = { 𝑉, Σ, 𝑃, 𝑆 }
+      <br>   Donde: 
+      <br>V = {S, A, B} 
+      <br>Σ = {m, n }
+      <br>P = { 	S → Am, 
+         <br>&nbsp;&nbsp;&nbsp;&nbsp;B → λ | m,
+         <br>&nbsp;&nbsp;&nbsp;&nbsp;A → Bn | Am | n}
+         <br> S = { S }
+         <br>   Figura del árbol 2
+         <br>
+         <br>Por ende, el lenguaje de la gramática 2 es:
+         <br>L2 = { 𝑛𝑚, 𝑚𝑛𝑚, 𝑛𝑚𝑚, 𝑚𝑛𝑚𝑚, 𝑛𝑚𝑚𝑚... }
+         <br>
+         <br>Por compresión 
+         <br>L2 = {𝑛𝑚^a, 𝑚𝑛𝑚^a | 𝑎 > 0}
+         <br>
+         <br>Analizaremos las siguientes palabras:
+         <br>W1 = nm
+         <br>W2= mnmm
+         <br>W3= mnmnm
+         <br>
+         <br>por medio de sus árboles de derivación particular, Las cuales deberían pertenecer al lenguaje 2
+         <br>
+         <br>palabra 1 
+         <br>Palabra 2
+         <br>Palabra 3
+         <br>
+         <br>Gracias a los árboles de derivación anteriores podemos determinar que: {𝑊1, 𝑊2} ϵ ⊥(𝐺2) PERO {W3} ∉ ⊥ (𝐺2 )
+         <br>
+      </h2>
+      </div></div>
+      </div>
+   </div>
+   </div>
+   </div>
+   </article>
+   <article class="iDevice_wrapper textIdevice em_iDevice" id="id4">
+      <div class="iDevice emphasis1" >
+      <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">G3</h1></header>
+      <div class="iDevice_inner">
+      <div class="iDevice_content_wrapper">
+      <div id="ta2_123_2" class="block iDevice_content">
+         <div class="exe-text"><div style="width: 100%;">
+            <h2>
+               <br>𝐺3= { 𝑉, Σ, 𝑃, 𝑆 }
+<br>Donde: 
+<br>V = {D, E, F} 
+<br>Σ = {0, 1 }
+<br>P = { 	D → E1|F, 
+   <br>&nbsp;&nbsp;&nbsp;&nbsp;E → =0E | 0,
+   <br>&nbsp;&nbsp;&nbsp;&nbsp;F → 1F | 1}
+   <br>S = { D }
+   <br>Figura del árbol 3
+   <br>
+   <br>Por ende, el lenguaje de la gramática 3 es:
+   <br>L3 = { 01, 1, 001, 11, 0001, 111, 00001, ... }
+   <br>
+   <br>Por compresión 
+   <br>L2 = {0^n 1, 1^n | n > 0}
+   <br>
+   <br>Analizaremos las siguientes palabras:
+   <br>W1 = 0001
+   <br>W2= 1110
+   <br>W3= 11111
+   <br>
+   <br>por medio de sus árboles de derivación particular, Las cuales deberían pertenecer al lenguaje 3
+   <br>
+   <br>palabra 1 
+   <br>Palabra 2
+   <br>Palabra 3
+   <br>
+   <br>Gracias a los árboles de derivación anteriores podemos determinar que: {𝑊1, 𝑊3} ϵ ⊥(𝐺3) PERO {W2} ∉ ⊥ (𝐺3)
+   <br>
+            </h2>
+         </div></div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </article>
+      <article class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+         <div class="iDevice emphasis1" >
+         <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">G4</h1></header>
+         <div class="iDevice_inner">
+         <div class="iDevice_content_wrapper">
+         <div id="ta2_123_2" class="block iDevice_content">
+            <div class="exe-text"><div style="width: 100%;">
+              <h2>
+               <br>𝐺4 = { 𝑉, Σ, 𝑃, 𝑆 }
+               <br> Donde: 
+               <br> V = {S, A, B,C} 
+               <br> Σ = {a, b }
+               <br> P = { 	S → A | B, 
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp; C → Ca | bb,
+                  <br> &nbsp;&nbsp;&nbsp;&nbsp;B → Ba | Ca | bb}
+                  <br>  S = { S }
+                  <br> Figura del árbol 4
+                  <br>
+                  <br> Por ende, el lenguaje de la gramática 4 es:
+                  <br> L2 = { bb, bba, ba, bbaa, baa, bbaaa, baaa, ... }
+                  <br>
+                  <br> Por compresión 
+                  <br> L2 = {bba^n, ba^m | m > 0}
+                  <br>
+                  <br> Analizaremos las siguientes palabras:
+                  <br>W1 = bbbaa
+                  <br>W2= baaaa
+                  <br>W3= bbaaa
+                  <br>
+                  <br> por medio de sus árboles de derivación particular, Las cuales deberían pertenecer al lenguaje 4
+                  <br>
+                  <br>palabra 1 
+                  <br>Palabra 2
+                  <br>Palabra 3
+                  <br>
+                  <br> Gracias a los árboles de derivación anteriores podemos determinar que: {𝑊2, 𝑊3} ϵ ⊥(𝐺4) PERO {W1} ∉ ⊥ (𝐺4)
+            </h2>
+            </div></div>
+            </div>
+         </div>
+         </div>
+         </div>
+         </article>
+         <article class="iDevice_wrapper textIdevice em_iDevice " id="id6">
+            <div class="iDevice emphasis1" >
+            <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">G5</h1></header>
+            <div class="iDevice_inner">
+            <div class="iDevice_content_wrapper">
+            <div id="ta2_123_2" class="block iDevice_content">
+               <div class="exe-text"><div style="width: 100%;">
+                 <h2>
+                  <br>𝐺4 = { 𝑉, Σ, 𝑃, 𝑆 }
+                  <br>Donde: 
+                  <br>V = {S, A, T} 
+                  <br>Σ = {a, b }
+                  <br>P = { 	S → AA | λ, 
+                     <br>&nbsp;&nbsp;&nbsp;&nbsp; A → aA | aT,
+                     <br>&nbsp;&nbsp;&nbsp;&nbsp;T → bT | aA | bb}
+                     <br>S = { S }
+                     <br>Figura del árbol 5
+               <br>
+                     <br> Como se puede observar en la figura anterior el lenguaje 5 es un conjunto de solución vacio, es decir, L5 = {Ø}. Entonces, la gramática 5 genera un lenguaje vacio, esto debido a que cada derivación en cualquiera de las ramas del árbol cuenta con un símbolo no terminal, por lo tanto no genera palabras.
+               Por ende los arboles de derivación particular no existen palabras que se puedan validar debido a que la gramática es vacía. 
+               <br>
+               <br> Gracias a los árboles de derivación anteriores podemos determinar que: {W1,W2,W3} ∉ ⊥ (𝐺4)
+               </h2>
+               </div></div>
+               </div>
+            </div>
+            </div>
+            </div>
+            </article>
+      
+
+
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Realizado por</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Fernando Garzon</p>
+</div>
+</section>
+</div>
+</div>
+<p id="made-with-eXe"></p><script type="text/javascript" src="_style_js.js"></script></body></html>

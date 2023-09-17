@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>A1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fernando Garzon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<meta name="description" content="Sedentarismo" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Proyecto Lenguajes Formales</div></header>
+<nav id="siteNav">
+   <ul>
+      <li id="active"><a href="Fundamentos.html" class=" daddy ">Fundamentos en lenguajes formales y ejercicios de aplicacion con transiciones vacias</a>
+         <ul class="other-section">
+            <li><a href="English.html" class="no-ch">I am Reading in English... </a></li>
+            <li><a href="IndagandoElAutomataVacio.html" class="no-ch">Indagando el autómata vacío </a></li>
+         </ul>  
+      </li>
+      <li><a href="deLasGramaticas.html" class="daddy">De las Gramáticas y los autómatas</a>
+         <ul >  
+         <li><a href="MuchosTipos.html" class="no-ch">Gramáticas de muchos tipos</a></li>
+            <li><a href="IndagandoLosAutomatas.html" class="no-ch">Indagando los automatas</a>
+               <ul>
+                  <li class="active"><a href="A1.html"  class="active daddy">A1</a></li>
+                  <li><a href="A2.html" class="no-ch">A2</a></li>
+               </ul>
+            </li>
+            <li><a href="FuncionesDeSalida.html" class="no-ch">Funciones de salida</a>
+               <ul class="other-section">
+                  <li><a href="A3.html" class="no-ch">A3</a></li>
+                  <li><a href="A4.html" class="no-ch">A4</a></li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+      <li><a href="bibliografas.html" class="no-ch">Bibliografías.</a></li>
+   </ul>
+   </nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="la_educacin_fsica_y_su_importancia_contra_el_sedentarismo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">A1</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sea el siguiente automata</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_123_2" class="block iDevice_content">
+   <div class="exe-text"><div style="width: 100%;">
+      <img src="Images taller/3.png " style="width: 100%;" alt="">
+      <h1>Para el desarrollo de este punto nos ayudaremos con la herramienta JFLAP para realizar la gramática, como vemos en la figura anterior</h1>
+      <img src="Images taller/4.png" style="width: 50%;"alt="">
+      <img src="Images taller/5.png" style="width: 50%;"alt="">
+      <h2>Por lo tanto, la gramática para el autómata 1 es:
+        <br> 𝐺 1 = { 𝑉, Σ, 𝑃, 𝑆 } 
+        <br>Donde: 
+        <br>
+<br>V = { S, A, B, C, D, E, F, G, H } Σ = {1, 2, 3}
+<br>
+<textarea readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >P = { 
+   S → 3B,
+   S → 2D,
+   S → 1C,
+   H → 1C,
+   C → 3H,
+   F → 1E,
+   D → 2S,
+   E → 3F,
+   D → 1E,
+   C → 1S,
+   E → 2D,
+   G → 1C,
+   F → 2G,
+   B → 1B,
+   B → 2B,
+   H → 2H,
+   G → 2G,
+   F → 3F,
+   H → 3H,
+   G → 3G,
+   C → 2D,
+   D → 3G,
+   E → 1S } 
+</textarea>
+   <br>
+   <br>S = { S }
+<br>
+<br> El formalismo del autómata seria: 
+<br>
+<br>𝐴1 = {𝑄, Σ, δ, 𝑄0 , 𝑄𝐴 } 
+<br>Q = { q0, q1, q2, q3, q4, q5, q6, q7, q8 } 
+<br>Σ = { 1, 2, 3 }
+<h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+   δ = { 
+      δ (q0, 1) = q1,
+      δ (q0, 2) = q2,
+      δ (q0, 3) = q0,
+      δ (q1, 1) = q3
+      δ (q1, 2) = q4
+      δ (q1, 3) = q2
+      δ (q2, 1) = q2 
+      δ (q2, 2) = q2 
+      δ (q3, 1) = q1 
+      δ (q3, 2) = q4 
+      δ (q3, 3) = q8 
+      δ (q4, 1) = q5 
+      δ (q4, 2) = q1 
+      δ (q4, 3) = q7 
+      δ (q5, 1) = q1 
+      δ (q5, 2) = q4 
+      δ (q5, 3) = q6 
+      δ (q6, 1) = q5 
+      δ (q6, 2) = q7 
+      δ (q6, 3) = q6 
+      δ (q7, 1) = q3 
+      δ (q7, 2) = q7 
+      δ (q7, 3) = q7 
+      δ (q8, 1) = q3 
+      δ (q8, 2) = q8 
+      δ (q8, 3) = q8  }
+</textarea>
+
+
+<br>
+<br>𝑄0 = { 𝑞1 } 
+<br>𝑄𝐴 = { 𝑞0 , 𝑞1 , 𝑞2 , 𝑞3 , 𝑞4 , 𝑞5 , 𝑞6 , 𝑞8 }
+   
+<br>
+<br>Tabla de transiciones para el autómata
+<br>
+<br>
+<img src="Images taller/6.png" style="width: 50%;"alt="">
+
+<br> Comprobamos una palabra que existe y una palabra  que no existe en el autómata
+<br>
+<h2>W1: 13232121311</h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+   δ (q1, 1) = q3 
+   δ (q3, 3) = q8 
+   δ (q8, 2) = q8 
+   δ (q8, 3) = q8 
+   δ (q8, 2) = q8 
+   δ (q8, 1) = q3 
+   δ (q3, 2) = q4 
+   δ (q4, 1) = q5 
+   δ (q5, 3) = q6 
+   δ (q6, 1) = q5 
+   δ (q5, 1) = q1   
+</textarea>
+<br>
+<br>Por lo tanto se determina que: δ(𝑞1, 𝑊1) = {𝑞1} y 𝑊1 ∈ 𝐿(𝐴1)
+<br>
+<h2>W2: 1321232</h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+δ (q1, 1) = q3 
+δ (q3, 3) = q8 
+δ (q8, 2) = q8 
+δ (q8, 1) = q3 
+δ (q3, 2) = q4 
+δ (q4, 3) = q7 
+δ (q7, 2) = q7
+  
+</textarea>
+<br>
+<br>Por lo tanto, se determina que: W2 ∉ 𝐿(𝐴1) 
+         </h2>
+   </div></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Realizado por</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Fernando Garzon</p>
+</div>
+</section>
+</div>
+
+</div>
+<p id="made-with-eXe"></p><script type="text/javascript" src="_style_js.js"></script></body></html>

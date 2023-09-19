@@ -19,7 +19,6 @@
 </head>
 <body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
-<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Proyecto Lenguajes Formales</div></header>
 <nav id="siteNav">
    <ul>
@@ -46,14 +45,33 @@
             </li>
          </ul>
       </li>
+      <li><a href="Minimizacionesysistematizacion.html" class="daddy">Minimizaciones y sistematizacion de gramaticas</a>
+         <ul class="other-section">  
+         <li><a href="MinimizandoAndo.html" class="no-ch">Minimizando... ando -> NFA -DFA</a>
+            <ul>
+               <li><a href="A5.html" class="no-ch">A5</a></li>
+               <li><a href="A6.html" class="no-ch">A6</a></li>
+               <li><a href="A7.html" class="no-ch">A7</a></li>
+               <li><a href="A8.html" class="no-ch">A8</a></li>
+            </ul>
+         </li>  
+         <li><a href="MinimizandoAndo-min.html" class="no-ch">Minimizando... ando -> DFA -DFA min</a>
+            <ul>
+               <li><a href="A9.html" class="no-ch">A9</a></li>
+               <li><a href="A10.html" class="no-ch">A10</a></li>
+               <li><a href="A11.html" class="no-ch">A11</a></li>
+            </ul>
+         </li> 
+         <li><a href="creandoUnArbol.html" class="no-ch">Creando un arbol</a></li> 
+      </ul>
+      </li>
+         
+         </ul>
+      </li>
       <li><a href="bibliografas.html" class="no-ch">Bibliografías.</a></li>
    </ul>
    </nav>
-<div id='topPagination'>
-<nav class="pagination noprt">
-<a href="la_educacin_fsica_y_su_importancia_contra_el_sedentarismo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</nav>
-</div>
+
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">A2</h1></header>
@@ -64,7 +82,105 @@
 <div class="iDevice_content_wrapper">
 <div id="ta2_123_2" class="block iDevice_content">
    <div class="exe-text"><div style="width: 100%;">
-      <h2>hola este seria el texto que aparecera en esta arte de lapagina web</h2>
+      <img src="Images taller/7.png " style="width: 100%;" alt="">
+      <h1>Para el desarrollo de este punto nos ayudaremos con la herramienta JFLAP para realizar la gramática, como vemos en la figura anterior</h1>
+      <img src="Images taller/8.png" style="width: 50%;"alt="">
+      <img src="Images taller/9.png" style="width: 50%;"alt="">
+      <h2>Por lo tanto, la gramática para el autómata 1 es:
+        <br> 𝐺 1 = { 𝑉, Σ, 𝑃, 𝑆 } 
+        <br>Donde: 
+        <br>
+<br>V = { S, A, B, C, D, E, F, G} 
+<br>Σ = {a, b}
+<br>
+<textarea readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >P = { 
+   S → aA,
+   S → bB,
+   E → aG,
+   B → aD,
+   D → aA,
+   A → bC,
+   E → bA,
+   F → aD,
+   A → aE,
+   F → bC,
+   G → bC,
+   C → bE,
+   B → bF,
+   D → bC,
+   C → aD,
+   G → aF
+   }    
+</textarea>
+   <br>
+   <br>S = { S }
+<br>
+<br> El formalismo del autómata seria: 
+<br>
+<br>𝐴1 = {𝑄, Σ, δ, 𝑄0 , 𝑄𝐴 } 
+<br>Q = { q0, q1, q2, q3, q4, q5, q6, q7 } 
+<br>Σ = { a, b }
+<h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+   δ = {
+      δ (q0, a) = q1,
+δ (q0, b) = q2,
+δ (q1, a) = q5,
+δ (q1, b) = q3,
+δ (q2, a) = q4,
+δ (q2, b) = q6,
+δ (q3, a) = q4,
+δ (q3, b) = q5,
+δ (q4, a) = q1,
+δ (q4, b) = q3,
+δ (q5, a) = q7,
+δ (q5, b) = q1,
+δ (q6, a) = q4,
+δ (q6, b) = q3,
+δ (q7, a) = q6,
+δ (q7, b) = q3 }      
+</textarea>
+
+
+<br>
+<br>𝑄0 = { 𝑞0 } 
+<br>𝑄𝐴 = { 𝑞0 , 𝑞3 , 𝑞4 , 𝑞5 , 𝑞7}
+   
+<br>
+<br>Tabla de transiciones para el autómata
+<br>
+<br>
+<img src="Images taller/10.png" style="width: 50%;"alt="">
+
+<br> Comprobamos una palabra que existe y una palabra  que no existe en el autómata
+<br>
+<h2>W1: babbaaa</h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+   δ (q0, b) = q2
+δ (q2, a) = q4
+δ (q4, b) = q3
+δ (q3, b) = q5
+δ (q5, a) = q7
+δ (q7, a) = q6
+δ (q6, a) = q4
+   
+</textarea>
+<br>
+<br>Por lo tanto se determina que: δ(𝑞1, 𝑊1) = {𝑞4} y 𝑊1 ∈ 𝐿(𝐴2)
+<br>
+<h2>W2: aaabbb</h2>
+<textarea  readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >
+   δ (q0, a) = q1
+   δ (q1, a) = q5
+   δ (q5, a) = q7
+   δ (q7, b) = q3
+   δ (q3, b) = q5
+   δ (q5, b) = q1
+   
+</textarea>
+<br>
+<br>Por lo tanto, se determina que:  𝑊2 ∉ 𝐿(𝐴2)
+         </h2>
    </div></div>
    </div>
 </div>

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>A10 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fernando Garzon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<meta name="description" content="Sedentarismo" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+   <div id="content">
+   <header id="header" ><div id="headerContent">Proyecto Lenguajes Formales</div></header>
+   <nav id="siteNav">
+      <ul>
+         <li id="active"><a href="Fundamentos.html" class=" daddy ">Fundamentos en lenguajes formales y ejercicios de aplicacion con transiciones vacias</a>
+            <ul class="other-section">
+               <li><a href="English.html" class="no-ch">I am Reading in English... </a></li>
+               <li><a href="IndagandoElAutomataVacio.html" class="no-ch">Indagando el autómata vacío </a></li>
+            </ul>  
+         </li>
+         <li><a href="deLasGramaticas.html" class="daddy">De las Gramáticas y los autómatas</a>
+            <ul class="other-section">  
+            <li><a href="MuchosTipos.html" class="no-ch">Gramáticas de muchos tipos</a></li>
+               <li><a href="IndagandoLosAutomatas.html" class="no-ch">Indagando los automatas</a>
+                  <ul class="other-section">
+                     <li ><a href="A1.html"  class="daddy">A1</a></li>
+                     <li><a href="A2.html" class="no-ch">A2</a></li>
+                  </ul>
+               </li>
+               <li><a href="FuncionesDeSalida.html" class="no-ch">Funciones de salida</a>
+                  <ul class="other-section">
+                     <li><a href="A3.html" class="no-ch">A3</a></li>
+                     <li><a href="A4.html" class="no-ch">A4</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href="Minimizacionesysistematizacion.html" class="daddy">Minimizaciones y sistematizacion de gramaticas</a>
+            <ul >  
+            <li ><a href="MinimizandoAndo.html"  >Minimizando... ando -> NFA -DFA</a>
+               <ul class="other-section">
+                  <li><a href="A5.html" class="no-ch">A5</a></li>
+                  <li><a href="A6.html" class="no-ch">A6</a></li>
+                  <li><a href="A7.html" class="no-ch">A7</a></li>
+                  <li ><a href="A8.html" class="no-ch">A8</a></li>
+               </ul>
+            </li>  
+            <li ><a href="MinimizandoAndo-min.html" class="no-ch">Minimizando... ando -> DFA -DFA min</a>
+               <ul >
+                  <li><a href="A9.html" >A9</a></li>
+                  <li class="active" ><a href="A10.html" class=" active daddy" >A10</a></li>
+                  <li><a href="A11.html" class="no-ch">A11</a></li>
+               </ul>
+            </li> 
+            <li><a href="creandoUnArbol.html" class="no-ch">Creando un arbol</a></li> 
+         </ul>
+         </li>
+            
+            </ul>
+         </li>
+      <li><a href="bibliografas.html" class="no-ch">Bibliografías.</a></li>
+   </ul>
+   </nav>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">A10</h1></header>
+<div class="iDevice emphasis1" >
+</div></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2">
+
+   <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle"></h1></header>
+   <div class="iDevice_inner">
+   <div class="iDevice_content_wrapper">
+   <div id="ta2_123_2" class="block iDevice_content">
+      <div class="exe-text"><div style="width: 100%;">
+         <img src="Images taller/61.png " style="width: 70%;" alt="">
+         <h1>Formalizmo </h1>
+         <br>Σ= {a,b}
+         <br>Q =  {A, B, C, D, E, F, G, H}
+         <br>Qf ={E, F, G, H}
+         <br>Qi ={A}
+         <br>
+         <textarea readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >δ = { 
+            δ (A, a) = C, 
+            δ (A, b) = B,
+            δ (B, a) = D, 
+            δ (B, b) = C,
+            δ (C, b) = H,
+            δ (D, b) = E,
+            δ (E, a) = D, 
+            δ (E, b) = G,
+            δ (F, a) = G, 
+            δ (F, b) = D,
+            δ (G, b) = G,
+            δ (H, a) = C, 
+            δ (H, b) = G
+            }
+            
+         </textarea>
+         <br>
+         <h1>Tabla de transiciones</h1>
+         <img src="Images taller/52.png" style="width: 50%;"alt="">
+
+         <h1>MINIMIZACIÓN DFA</h1>
+         <H3> Tabla MyHill-Nerode</H3>
+         <h2>Marcar pares de estados que no son reducibles:</h2>
+
+         <img src="Images taller/63.png" style="width: 50%;"alt="">
+         <h1> Revisar no marcados</h1>
+         <H2>(A, B) = δ (A, a) = C |---NM</H2>
+            <br>δ (B, a) = D |
+            <br>δ (A, b) = B |--NM
+            <br>δ (B, b) = C |
+         <H2> (A, C) = δ (A, a) = C |---NE</H2>
+         <br>δ (C, a) = NE |
+         <br> δ (A, b) = B |--M
+         <br>δ (C, b) = H |
+         <H2> (B, C) = δ (B, a) = C |---NE</H2>
+         <br>δ (C, a) = NE |
+         <br>δ (B, b) = B |--M
+         <br>δ (C, b) = H |
+<H2> (A, D) = δ (A, a) = C |---NE</H2>
+<br>δ (D, a) = NE |
+<br>δ (A, b) = B |--M
+<br>δ (D, b) = E |
+<H2> (B, D) = δ (B, a) = D |---NE</H2>
+<br>δ (D, a) = NE |
+<br>δ (B, b) = C |--M
+<br>δ (D, b) = E |
+<H2> (C, D) = δ (C, a) = NE |---NE</H2>
+<br>δ (D, a) = NE |
+<br>δ (C, b) = H |--NM
+<br>δ (D, b) = E |
+<H2> (E, F) = δ (E, a) = D |---M</H2>
+<br>δ (F, a) = G |
+<br>δ (E, b) = G |--M
+<br>δ (F, b) = D |
+<H2> (E, G) = δ (E, a) = D |---NE</H2>
+<br>δ (G, a) = NE |
+<br>δ (E, b) = G |--NE
+<br>δ (G, b) = G |
+<H2>(F, G) = δ (F, a) = G |---NE</H2>
+<br>δ (G, a) = NE |
+<br>δ (F, b) = D|--M
+<br>δ (G, b) = G |
+<H2> (E, H) = δ (E, a) = D |---NM</H2>
+<br>δ (H, a) = C |
+<br>δ (E, b) = G |--NE
+<br>δ (H, b) = G |
+<H2> (F, H) = δ (F, a) = G |---M</H2>
+<br>δ (H, a) = C |
+<br>δ (F, b) = D |--M
+<br>δ (H, b) = G |
+<H2> (G, H) = δ (G, a) = NE |---NE</H2>
+<br>δ (H, a) = C |
+<br>δ (G, b) = G |--NE
+<br>δ (H, b) = G |
+<H1> Marcar estados</H1>
+<img src="Images taller/64.png" style="width: 50%;"alt="">
+<H1>Revisar no marcados</H1>
+<H2> (C, D) = δ (C, a) = NE |---NE</H2>
+<br>δ (D, a) = NE |
+<br>δ (C, b) = H |--NM
+<br>δ (D, b) = E |
+<H2> (E, G) = δ (E, a) = D |---NE</H2>
+<br>δ (G, a) = NE |
+<br>δ (E, b) = G |--NE
+<br>δ (G, b) = G |
+<H2> (E, H) = δ (E, a) = D |---NM</H2>
+<br>δ (H, a) = C |
+<br>δ (E, b) = G |--NE
+<br>δ (H, b) = G |
+<H2> (G, H) = δ (G, a) = NE |---NE</H2>
+<br>δ (H, a) = C |
+<br>δ (G, b) = G |--NE
+<br>δ (H, b) = G |
+
+<H1>Ya no quedan estados (Q) por marcar, ahora se combinan los pares no marcados en un
+   nuevo DFA</H1>
+   <img src="Images taller/65.png" style="width: 50%;"alt="">
+<h1>Nuevo DFA minimizado:</h1>
+<img src="Images taller/66.png" style="width: 50%;"alt="">
+<h1>FORMALISMO DEL NUEVO NFA:</h1>
+<br>Q = {A, B, CD, EGH, F}
+<br>Σ = {a,b}
+<br>Qf = {F, EGH }
+<br>Qi = {A}
+<textarea readonly name="" id="" cols="30" rows="10" style="font-size: 20pt;" >δ = {
+   <br>δ (A, a) = CD,
+   <br>δ (A, b) = B,
+   <br>δ (B, a) = CD, 
+   <br>δ (B, b) = CD,
+   <br>δ (CD, b) = EGH,
+   <br>δ (EGH, a) = CD,
+   <br>δ (EGH, b) = EGH,
+   <br>δ (F, a) = EGH, 
+   <br>δ (F, b) = CD
+   <br>}
+</textarea>
+<h1>TABLA DE TRANSICIONES</h1>
+<img src="Images taller/67.png" style="width: 50%;"alt="">
+<h1>PRUEBA DE EQUIVALENCIA DE LOS AUTÓMATAS (FTE)</h1>
+<h1>𝑊2 = 𝑏𝑎𝑏𝑎𝑏𝑏</h1>
+<h1>Autómata original (A10)</h1>
+<br>δ (A, b) = B
+<br>δ (B, a) = D
+<br>δ (D, b) = E
+<br>δ (E, a) = D
+<br>δ (D, b) = E
+<br>δ (E, b) = G → G ∈ Qf
+<h1>FTE : δ̂(A, W2 )={G} , { G ∈ Qf | W2 ∈ L(A10 )}</h1>
+<H1>Autómata minimizado (Ax)</H1>
+<br>δ (A, b) = B
+<br>δ (B, a) = CD
+<br>δ (CD, b) = EGH
+<br>δ (EGH, a) = CD
+<br>δ (CD, b) = EGH
+<br>δ (EGH, b) = EGH → EGH ∈ Qf
+<H1>FTE : δ̂(A, W2 )={ EGH } , { EGH ∈ Qf | W2 ∈ L(Ax )}</H1>
+        
+
+      </div></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Realizado por</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>Fernando Garzon</p>
+</div>
+</section>
+</div>
+
+</div>
+<p id="made-with-eXe"></p><script type="text/javascript" src="_style_js.js"></script></body></html>
